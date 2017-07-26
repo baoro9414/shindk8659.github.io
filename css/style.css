@@ -14,6 +14,18 @@ color:#FFFFFF;}
   background-color: #f4a39a;
 
 }
+#bgd {
+    position: absolute;
+    background-image: url("../image/콘서트.jpg");
+    background-size: 178%;
+    background-repeat: no-repeat;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height: auto;
+    min-height: 1500px;
+}
 
 .spaceLeft {
   margin-left: 10px;
@@ -65,7 +77,54 @@ color:#FFFFFF;}
 .thumbnail:hover {
 background-color: #FA6A5C;
 opacity: 0.5;
+
 }
 a:link {text-decoration: none; color: black;}
 a:active {text-decoration: none; color: black;}
 a:hover {text-decoration: underline:none; color: white;}
+
+.bg1{
+  background-image: url(../image/concert.jpg);
+  background-size:cover;
+
+}
+.bg2{
+  background-image: url(../image/food.gif);
+  background-size:cover;
+
+}
+.bg3{
+  background-image: url(../image/sport.gif);
+  background-size:cover;
+
+}
+.bg4{
+  background-image: url(../image/study.gif);
+  background-size:cover;
+
+}
+.bg5{
+  background-image: url(../image/hobby.gif);
+  background-size:cover;
+
+}
+.bg6{
+  background-image: url(../image/local.gif);
+  background-size:cover;
+
+}
+.bg7{
+  background-image: url(../image/game.gif);
+  background-size:cover;
+
+}
+.bg8{
+  background-image: url(../image/outgoing.gif);
+  background-size:cover;
+
+}
+.bg9{
+  background-image: url(../image/thunder.gif);
+  background-size:cover;
+
+}
