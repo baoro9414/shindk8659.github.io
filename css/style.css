@@ -8,9 +8,14 @@
 
 
 }
-#addcolor{background-color:#FA6A5C;
+#addcolor{
+
+  background-color:#FA6A5C;
 color:#FFFFFF;}
 #backcolor {
+  background: linear-gradient( #F4A39A,#FFFFFF);
+
+
   background-color: #f4a39a;
 
 }
