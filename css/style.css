@@ -1,6 +1,39 @@
-
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 * { font-family: 'Nanum Gothic', sans-serif; }
+
+.filebox {
+  display:inline-block;
+  }
+.filebox label {
+  display: inline-block;
+  padding: .5em .75em;
+  color: #FA6A5C;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: .25em;
+}
+
+.filebox input[type="file"] {  /* 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+#map {
+        height: 400px;
+        width: 100%;
+       }
+
+
 
 #changePnB{
   padding: 0px;
@@ -13,23 +46,81 @@
   background-color:#FA6A5C;
 color:#FFFFFF;}
 #backcolor {
-  background: linear-gradient( #F4A39A,#FFFFFF);
-
-
   background-color: #f4a39a;
 
 }
-#bgd {
-    position: absolute;
-    background-image: url("../image/콘서트.jpg");
-    background-size: 178%;
-    background-repeat: no-repeat;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    height: auto;
-    min-height: 1500px;
+#addfontcolor
+{
+  color: #FA6A5C;
+}
+/* navbar */
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #777;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
 }
 
 .spaceLeft {
@@ -48,6 +139,7 @@ color:#FFFFFF;}
 }
 
 .square-box{
+
     position: relative;
     margin-bottom: 20px;
     border-radius: 50%;
@@ -89,47 +181,67 @@ a:active {text-decoration: none; color: black;}
 a:hover {text-decoration: underline:none; color: white;}
 
 .bg1{
-  background-image: url(../image/concert.jpg);
+  background-image: url(../images/concert.jpg);
   background-size:cover;
 
 }
 .bg2{
-  background-image: url(../image/food.gif);
+  background-image: url(../images/food.gif);
   background-size:cover;
 
 }
 .bg3{
-  background-image: url(../image/sport.gif);
+  background-image: url(../images/sport.gif);
   background-size:cover;
 
 }
 .bg4{
-  background-image: url(../image/study.gif);
+  background-image: url(../images/study.gif);
   background-size:cover;
 
 }
 .bg5{
-  background-image: url(../image/hobby.gif);
+  background-image: url(../images/hobby.gif);
   background-size:cover;
 
 }
 .bg6{
-  background-image: url(../image/local.gif);
+  background-image: url(../images/local.gif);
   background-size:cover;
 
 }
 .bg7{
-  background-image: url(../image/game.gif);
+  background-image: url(../images/game.gif);
   background-size:cover;
 
 }
 .bg8{
-  background-image: url(../image/outgoing.gif);
+  background-image: url(../images/outgoing.gif);
   background-size:cover;
 
 }
 .bg9{
-  background-image: url(../image/thunder.gif);
+  background-image: url(../images/thunder.gif);
   background-size:cover;
 
+}
+.contentsbox{
+
+  background-color: #f4a39a;
+
+
+}
+@media (min-width: 600px) {
+  .contentsbox{
+    background-color: #f4a39a;
+    font-size: 200%;
+
+  }
+}
+@media (min-width: 1200px) {
+  .contentsbox{
+    background-color: #f4a39a;
+    font-size: 300%;
+
+  }
 }
